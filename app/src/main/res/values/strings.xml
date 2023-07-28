@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android-Lesson-002</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="student_title">STUDENT PORTAL</string>
+    <string name="student_profile">PROFILE</string>
+    <string name="student_events">EVENTS</string>
+    <string name="student_staffs">STAFFS</string>
+    <string name="student_attendence">Attendence</string>
+    <string name="student_chatbox">CHATBOX</string>
+    <string name="student_grade_sheet">GradeSheet</string>
+    <string name="student_gallery">Galery</string>
+    <string name="student_fees">Fees details</string>
+</resources>

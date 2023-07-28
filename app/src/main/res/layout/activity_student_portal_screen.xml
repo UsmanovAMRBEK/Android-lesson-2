@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentPortalScreen">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_title"
+            android:textColor="@color/student_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:alpha="0.8"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!-- List items-->
+    <!-- 1-row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="6dp"
+        >
+        <!-- Student Profile -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:paddingBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:elevation="9dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_profile_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_profile"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/profileImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Events -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:paddingBottom="15dp"
+            android:elevation="9dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/eventsImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_events_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_events"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/eventsImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!-- 2-row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="6dp"
+        >
+        <!-- Staffs -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:paddingBottom="15dp"
+            android:elevation="9dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/staffsImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_staffs_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_staffs"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/staffsImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Attendence -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:paddingBottom="15dp"
+            android:elevation="9dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/attendenceImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_attendence_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_attendence"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/attendenceImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!-- 3-row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="6dp"
+        >
+        <!-- Chatbox -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:paddingBottom="15dp"
+            android:elevation="9dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/chatboxImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_chatbox_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_chatbox"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/chatboxImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Gradesheet -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:paddingBottom="15dp"
+            android:elevation="9dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gradeSheetImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_gradesheet_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_grade_sheet"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/gradeSheetImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!-- 4-row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="6dp"
+        >
+        <!-- Galery -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:layout_marginEnd="15dp"
+            android:paddingBottom="15dp"
+            android:elevation="9dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/galeryImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_galery_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_gallery"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/galeryImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Fees Details -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:layout_marginStart="15dp"
+            android:paddingBottom="15dp"
+            android:elevation="9dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/feesImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:src="@mipmap/ic_fees_foreground"
+                tools:ignore="ContentDescription,MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/student_fees"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/feesImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
